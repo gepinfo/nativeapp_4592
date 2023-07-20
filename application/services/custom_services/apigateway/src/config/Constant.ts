@@ -1,0 +1,9 @@
+export const SECURITYURL = process.env.SECURITYURL;
+export const AUTHPROXYURL = process.env.AUTHPROXYURL;
+export const GCAMURL = process.env.GCAMURL;
+export const ADMINURL = process.env.ADMINURL;
+export const CAMUNDAURL = process.env.CAMUNDAURL;
+export const SYSTEMCREDENTIALMANAGERURL = process.env.SYSTEMCREDENTIALMANAGERURL;
+export const SYSTEMENTRYURL = process.env.SYSTEMENTRYURL;
+export const FEATURE1URL = process.env.FEATURE1URL;
+export const FEATURE2URL = process.env.FEATURE2URL;

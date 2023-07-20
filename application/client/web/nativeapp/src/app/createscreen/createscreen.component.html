@@ -1,0 +1,47 @@
+<h2 class="screen-align">Createscreen</h2>
+<div id="template-ilfb" class="gjs-row">
+    <div id="template-is71" class="gjs-cell">
+        <label id="template-iy4e" class="label ">Name</label>
+        <input id="template-isah2" [(ngModel)]="feature1.name" [ngModelOptions]="{standalone: true}"
+        ngDefaultControl class="input form-control " />
+    </div>
+    <div id="template-ifb9" class="gjs-cell">
+        <label id="template-iuwyl" class="label ">Types</label>
+        <div id="template-i9a81" class="">
+            <ng-select id="template-ibbbe" name="dynamicdropdown_template-ibbbe" [searchable]="true"
+            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="feature1.types"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-if6w" class="gjs-cell">
+        <label id="template-irfne" class="label ">Typess</label>
+        <div id="template-i16ri" class="">
+            <ng-select id="template-ipgur" name="multiselectdropdown_template-ipgur"
+            [searchable]="true" [virtualScroll]="true" [items]="itemArray" bindLabel=""
+            bindValue="" [multiple]="true" [(ngModel)]="feature1.name" [ngModelOptions]="{standalone: true}"
+            ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+</div>
+<div id="template-igkj" class="gjs-row">
+    <div id="template-iku2" class="gjs-cell">
+        <label id="template-i4gej" class="label ">Typesss</label>
+        <div id="template-it7um" class="">
+            <ng-select id="template-i3kdg" name="dynamicdropdown_template-i3kdg" [searchable]="true"
+            [virtualScroll]="true" [items]="feature2itemArray" bindLabel="name" bindValue="name"
+            [(ngModel)]="feature1.typesss" [ngModelOptions]="{standalone: true}" ngDefaultControl
+            (click)="feature2GpGetAllValues()" class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-i3uj" class="gjs-cell">
+        <label id="template-i2ouz" class="label ">Typessss</label>
+        <div id="template-i6h2i" class="">
+            <ng-select id="template-i5lof" name="dynamicdropdown_template-i5lof" [searchable]="true"
+            [virtualScroll]="true" [items]="itemArray" bindLabel="" bindValue="" [(ngModel)]="feature1.typessss"
+            [ngModelOptions]="{standalone: true}" ngDefaultControl class="form-control "></ng-select>
+        </div>
+    </div>
+    <div id="template-ipbl" class="gjs-cell">
+        <div id="template-iuh9v" (click)="GpCreate()" class="button btn btn-primary ">Send</div>
+    </div>
+</div>

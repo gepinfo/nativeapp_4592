@@ -1,0 +1,64 @@
+---
+openapi: 3.0.0
+info:
+   version: 1.3.0
+   title: nativeapp open api specification
+   description: feature2 API
+   termsOfService: http://api_url/terms/
+   contact:
+      name: ContactName
+      email: hello@wolox.co
+      url: https://www.wolox.com.ar/
+   license:
+      name: Apache 2.0
+      url: https://www.apache.org/licenses/LICENSE-2.0.html
+servers:
+   - url: http://localhost:8012
+     description: feature2
+tags:
+- name: feature2
+paths:
+   "/feature2":
+      post:
+         tags:
+         -  feature2
+         description: GpCreate
+         requestBody:
+            content:
+               application/json:
+                  schema:
+                     $ref: "#/components/schemas/feature2"
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+   "/feature2/userid/created_by":
+      get:
+         tags:
+         -  feature2
+         description: GpGetNounCreatedBy
+         responses:
+            200:
+               description: Success
+            400:
+               description: Bad Request
+            404:
+               description: Not Found
+            500:
+               description: Internal Server Error
+components:
+   schemas:
+      feature2:
+         type: object
+         properties:
+            name:
+               type: "string"
+               description: Description
+            description:
+               type: "string"
+               description: Description
